@@ -1,126 +1,72 @@
 /* ===================================
-   Laughing Loop - Custom Styles
+    Crafto - Vertical portfolio
 ====================================== */
-
-/* Import Fonts */
+/* font */
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
-/* Root Theme Variables */
-:root {
-    --bg-color: #000000; /* Dark theme */
-    --text-color: #ffffff;
-    --highlight-color: #ffcc00;
-    --card-bg: #1c1c1c;
-    --primary-font: 'Courier New', Courier, monospace; /* Courier for code aesthetic */
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@200;300;400;500;600;700;800;900&display=swap');
+/* variable */
+:root {     
+    --base-color:#1C2C24;
     --alt-font: 'Bebas Neue', cursive;
-    --contour-bg: url('../images/contour-bg.png'); /* Background Pattern */
+    --primary-font: 'Albert Sans', sans-serif;
+    --medium-gray: #7c8983;
+    --dark-gray: #172c23;
+} 
+/* reset */
+body{
+    background: var(--dark-gray);
+    font-size: 20px;
+    line-height: 34px;
 }
-
-/* Light Mode */
-[data-theme="light"] {
-    --bg-color: #ffffff;
-    --text-color: #000000;
-    --highlight-color: #ff6600;
-    --card-bg: #f4f4f4;
+/* header */
+header .navbar-brand img {
+    max-height:46px;
 }
-
-/* General Reset */
-body {
-    background: var(--bg-color);
-    background-image: var(--contour-bg); /* Adding contour background */
-    background-size: cover;
-    color: var(--text-color);
-    font-family: var(--primary-font);
-    transition: background 0.5s, color 0.5s;
+.header-icon .header-social-icon a {
+    padding-left: 25px;
 }
-
-/* Hero Section */
-.hero {
-    text-align: center;
-    padding: 80px 20px;
+.hamburger-menu-simple .menu-item-list .nav-link {
+    font-size: 80px;
+    line-height: 60px;
 }
-.hero h1 {
-    font-size: 2.5rem;
-    font-family: var(--alt-font);
+header .elements-social ul li a {
+    width: auto;
+    height: auto;
 }
-.hero .highlight {
-    color: var(--highlight-color);
+header .elements-social ul li {
+    margin-right: 20px;
+    margin-left: 0;
 }
-
-/* Navigation */
-.navbar {
-    padding: 15px;
+h3 {
+    font-size: 2.813rem;
+    line-height: 2.813rem;
 }
-.navbar-brand img {
-    max-height: 46px;
+.text-olive-green{
+    color: #252525;
 }
-
-/* Theme Toggle */
-.theme-toggle-btn {
-    background: none;
-    border: none;
-    font-size: 1.5rem;
-    cursor: pointer;
+.text-light-green{
+    color: #445a52;
 }
-
-/* Projects Section */
-.projects {
-    text-align: center;
-    padding: 50px 20px;
+.bg-light-green{
+    background: #445a52;
 }
-.project-list {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
+.bg-olive-green{
+    background: #15221C;
 }
-.project-item {
-    background: var(--card-bg);
-    padding: 20px;
-    border-radius: 10px;
-    width: 300px;
-    text-align: center;
-    transition: transform 0.3s;
+.lh-165{
+    line-height: 165px;
 }
-.project-item:hover {
-    transform: scale(1.05);
+.bg-gradient-dark-transparent {
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(7%, #172c23), to(transparent));
+    background: linear-gradient(to top, #172c23 7%, transparent 100%);
 }
-.project-item img {
-    max-width: 100%;
-    border-radius: 5px;
+.right-minus-200px {
+    right: -200px;
 }
-
-/* Floating Animation for Caricature Background */
-body::before {
-    content: "";
-    background: url('../images/caricature-dark.png') no-repeat center;
-    background-size: contain;
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    width: 150px;
-    height: 150px;
-    animation: float 5s infinite alternate ease-in-out;
-    z-index: -1;
-    opacity: 0.6;
+.mb-50 {
+    margin-bottom: 50%;
 }
-
-/* Light Mode Caricature Inversion */
-[data-theme="light"] body::before {
-    background: url('../images/caricature-light.png');
-}
-
-/* Floating Animation */
-@keyframes float {
-    0% {
-        transform: translateY(0);
-    }
-    100% {
-        transform: translateY(-10px);
-    }
-}
-
-/* Swiper Customization */
+/* slider */
 .demo-vertical-portfolio .swiper .swiper-slide {
     transform: scale(0.8);
     transition: all 0.6s ease-in-out;
@@ -130,51 +76,142 @@ body::before {
     transition: all 0.6s ease-in-out;
     transition-delay: 0.4s;
 }
-
-/* Swiper Pagination */
-.swiper-pagination-bullet {
-    width: 10px;
-    height: 10px;
-    background: var(--highlight-color);
-    opacity: 0.7;
-    transition: 0.3s;
+.slider-big-title {
+    font-size: 70rem;
+    line-height: 68rem;
 }
-.swiper-pagination-bullet:hover,
-.swiper-pagination-bullet.swiper-pagination-bullet-active {
+/* float animation */
+.animation-float {
+    animation: float 1500ms linear 500ms infinite alternate both;
+}
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(25px);
+    }
+
+    100% {
+        transform: translateY(50px);
+    }
+}
+/* scrolling text */
+.marquees-text {
+    /* Starting position */ 
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    /* Apply animation to this element */ 
+    -webkit-animation: example1 20s linear infinite;
+    animation: example1 20s linear infinite;
+    width: 100%;
+}
+.team-style-08 figure figcaption .social-icon a {
+    background-color: var(--white);
+}
+/* magic cursor */
+.magic-drag-cursor #ball-cursor {
+    width: 180px;
+    height: 180px;
+}
+.magic-drag-cursor #ball-cursor:before {
+    content: "DRAG";
+    font-family: var(--primary-font) !important;
+}
+/* btn */
+.btn {
+    font-family: var(--primary-font);
+}
+/* bg gradient color */
+.bg-gradient-very-light-gray-transparent {
+    background: -webkit-linear-gradient(right, rgba(240, 244, 253, 1.0), rgba(255, 255, 255, 0.0));
+    background: linear-gradient(to right, rgba(240, 244, 253, 1.0), rgba(255, 255, 255, 0.0));
+}
+.bg-gradient-light-gray-transparent {
+    background: -webkit-linear-gradient(right, rgba(240, 244, 253, 0.3), rgba(255, 255, 255, 0.0));
+    background: linear-gradient(to right, rgba(240, 244, 253, 0.3), rgba(255, 255, 255, 0.0));
+}
+/* feature box */
+.feature-box:hover .feature-box-icon .text-outline {
+    -webkit-text-fill-color: var(--base-color);
     opacity: 1;
-    transform: scale(1.3);
 }
-
-/* Footer */
+/* footer */
 footer {
-    text-align: center;
-    padding: 20px;
-    background: var(--card-bg);
+    font-size: 17px;
 }
-footer p {
-    font-size: 0.9rem;
-    color: var(--text-color);
+footer .footer-logo img {
+    max-height: 46px;
 }
-
-/* Responsive Adjustments */
-@media (max-width: 991px) {
-    .hero h1 {
-        font-size: 2rem;
-    }
-    .project-list {
-        flex-direction: column;
+footer a:hover {
+    color: var(--white);
+}
+footer ul li {
+    margin-bottom: 0px;
+    line-height: 28px;
+}
+@media (min-width: 1400px){
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1350px;
     }
 }
-@media (max-width: 575px) {
-    .swiper-pagination-bullet {
-        width: 8px;
-        height: 8px;
+@media (max-width: 1600px){
+    .slider-big-title {
+        font-size: 65rem;
+        line-height: 63rem;
     }
-    .hero {
-        padding: 50px 20px;
+}
+@media (max-width: 1399px){
+    .slider-big-title {
+        font-size: 55rem;
+        line-height: 60rem;
     }
-    body::before {
-        width: 100px;
-        height: 100px;
+}
+@media (max-width: 1199px){
+    .slider-big-title {
+        font-size: 45rem;
+        line-height: 59.5rem;
+    }
+    .lh-165{
+        line-height: 140px;
+    }
+}
+@media (max-width: 991px){
+    .slider-big-title {
+        font-size: 35rem;
+        line-height: 33rem;
+    }
+    .swiper-vertical .marquees-text {
+        top: 28% !important;
+    }
+    .header-transparent[data-header-hover=dark] {
+        background-color: transparent !important;
+    }
+    .hamburger-menu-simple .menu-item-list .nav-link {
+        font-size: 60px;
+        line-height: 50px;
+    }
+}
+@media (max-width: 767px){
+    .swiper-vertical > .swiper-pagination-bullets-right {
+        width: 100%;
+        right: 0;
+        top: 92%;
+        text-align: center;
+    }
+    .swiper-vertical > .swiper-pagination-bullets-right .swiper-pagination-bullet {
+        margin: 0 20px !important;
+        display: inline-block;
+    }
+    .hamburger-menu-simple .menu-item-list .nav-link {
+        font-size: 50px;
+        line-height: 40px;
+    }
+}
+@media (max-width: 575px){
+    .slider-big-title {
+        font-size: 6rem;
+        line-height: 10rem;
     }
 }

@@ -6,9 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <meta name="description" content="Laughing Loop - Where creativity takes form.">
-    
+
     <!-- Favicon -->
     <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
@@ -24,103 +27,136 @@
 
 <body data-mobile-nav-style="classic">
 
-    <!-- Header -->
+    <!-- start header -->
     <header>
-        <nav class="navbar navbar-expand-lg header-transparent bg-transparent disable-fixed">
+        <!-- start navigation -->
+        <nav class="navbar navbar-expand-lg header-transparent bg-transparent disable-fixed" data-header-hover="dark">
             <div class="container-fluid">
+                <div class="col-auto col-lg-2 me-lg-0 me-auto d-none d-lg-flex">
+                    <div class="header-icon icon">
+                        <button id="theme-toggle" class="theme-toggle-btn">🌞 | 🌙</button> 
+                    </div>
+                </div>
                 <div class="col-auto">
-                    <a class="navbar-brand" href="index.html">
-                        <img src="images/laughing-loop.svg" alt="Laughing Loop Logo" class="logo">
+                    <a class="navbar-brand" href="demo-vertical-portfolio.html">
+                        <img src="images/laughingloop-logo-white.png" data-at2x="images/laughingloop-logo-white@2x.png" alt="" class="default-logo">
+                        <img src="images/laughingloop-logo-white.png" data-at2x="images/laughingloop-logo-white@2x.png" alt="" class="alt-logo">
+                        <img src="images/laughingloop-logo-white.png" data-at2x="images/laughingloop-logo-white@2x.png" alt="" class="mobile-logo">
                     </a>
                 </div>
-                <div class="col-auto text-end">
-                    <button id="theme-toggle" class="theme-toggle-btn">🌞 / 🌙</button>
+                <div class="col-auto col-lg-2 text-end">
+                    <div class="header-icon">
+                        <a href="contact.html" class="contact-icon"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
                 </div>
             </div>
         </nav>
+        <!-- end navigation -->
     </header>
-
-    <!-- Swiper Portfolio Section -->
-    <section class="demo-vertical-portfolio magic-cursor drag-cursor p-0 cover-background position-relative">
+    <!-- end header -->
+    <!-- start section -->
+    <section class="demo-vertical-portfolio magic-cursor drag-cursor p-0 cover-background position-relative" style="background-image:url('images/portfolio-bg-01.png');">
         <div class="absolute-bottom-center left-0px z-index-1">
-            <img class="animation-float xs-w-250px" src="images/demo-vertical-portfolio-bg-01.png" alt="">
+            <img class="animation-float xs-w-250px" src="images/vertical-portfolio-bg-01.png" alt="">
         </div>
         <div class="absolute-middle-right right-100px top-150px mt-70px z-index-1">
-            <img class="animation-float" src="images/demo-vertical-portfolio-bg-02.png" alt="">
+            <img class="animation-float" src="images/vertical-portfolio-bg-02.png" alt="">
         </div>
 
-        <!-- Welcome Message -->
-        <div class="absolute-top-center text-center z-index-1">
-            <h1 class="alt-font text-white">Welcome to <span class="highlight">Laughing Loop</span></h1>
-            <p class="text-white">Where creativity and fun go in infinite loops.</p>
-        </div>
-
-        <div class="swiper full-screen ipad-top-space-margin swiper-light-pagination swiper-pagination-bullets-right"
-            data-slider-options='{ 
-                "slidesPerView": 1, 
-                "direction": "vertical", 
-                "loop": true, 
-                "mousewheel": true, 
-                "parallax": true, 
-                "speed": 1000, 
-                "pagination": { "el": ".swiper-pagination-bullets-right", "clickable": true }, 
-                "autoplay": { "delay": 4000, "disableOnInteraction": false },  
-                "keyboard": { "enabled": true, "onlyInViewport": true }, 
-                "breakpoints": { "1199": { "direction": "vertical" }}, 
-                "effect": "slide" 
-            }'>
+        <div class="swiper full-screen ipad-top-space-margin swiper-light-pagination swiper-pagination-bullets-right" data-slider-options='{ "slidesPerView": 1, "direction": "vertical", "loop": true, "mousewheel": true, "parallax": true, "speed": 1000, "pagination": { "el": ".swiper-pagination-bullets-right", "clickable": true }, "autoplay": { "delay": 4000, "disableOnInteraction": false },  "keyboard": { "enabled": true, "onlyInViewport": true }, "breakpoints": { "1199": { "direction": "vertical" }}, "effect": "slide" }'>
             <div class="swiper-wrapper">
-                <!-- Swiper Slide 1 -->
+                <!-- start slider item -->
                 <div class="swiper-slide">
                     <div class="container h-100">
                         <div class="row h-100 position-relative z-index-1">
-                            <div class="col-lg-10 col-md-11 d-flex flex-column justify-content-center h-100">
-                                <img src="images/project-1.png" class="border-radius-8px" alt="">
-                                <div class="alt-font position-absolute right-minus-120px text-white text-center">
-                                    <span class="text-shadow-large swiper-parallax-fancy-text">Creer Ads</span>
+                            <div class="col-lg-10 col-md-11 position-relative d-flex flex-column justify-content-center h-100">
+                                <div class="d-flex align-items-center position-relative ps-45px xs-ps-0">
+                                    <div class="position-absolute left-0px top-0px h-100 w-110px d-none d-sm-block">
+                                        <div class="vertical-title-center align-items-center">
+                                            <div class="title fs-12 ls-4px text-uppercase text-white" data-anime='{ "el": "childs", "rotateX": [90, 0], "opacity": [0,1], "delay": 500, "staggervalue": 150, "easing": "easeOutQuad" }'>
+                                                <span class="d-inline-block">Creer Ads</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="position-absolute z-index-1 top-30px right-40px xs-top-15px xs-right-25px d-flex align-items-center text-white fs-13"><span class="w-25px h-1px bg-white me-10px"></span> 01</div>
+                                    <img src="https://via.placeholder.com/1050x645" class="border-radius-8px" alt="">
+                                    <div class="alt-font position-absolute right-minus-120px md-right-110px sm-right-auto fs-180 md-fs-140 xs-fs-80 text-white sm-w-90 xs-w-100 text-center">
+                                        <span class="text-shadow-large swiper-parallax-fancy-text" data-fancy-text='{ "opacity": [0, 1], "delay": 800, "speed": 50, "string": ["Creerads Website"], "easing": "easeOutQuad" }'></span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <!-- start marquees -->
+                        <div class="marquees-text slider-big-title alt-font ls-minus-10px text-olive-green text-nowrap position-absolute top-0px left-0px d-none d-md-block">Creerads Website</div> 
+                        <!-- end marquees -->
                     </div>
                 </div>
-
-                <!-- Swiper Slide 2 -->
+                <!-- end slider item -->
+                <!-- start slider item -->
                 <div class="swiper-slide">
                     <div class="container h-100">
                         <div class="row h-100 position-relative z-index-1">
-                            <div class="col-lg-10 col-md-11 d-flex flex-column justify-content-center h-100">
-                                <img src="images/project-2.png" class="border-radius-8px" alt="">
-                                <div class="alt-font position-absolute right-minus-120px text-white text-center">
-                                    <span class="text-shadow-large swiper-parallax-fancy-text">School Management</span>
+                            <div class="col-lg-10 col-md-11 position-relative d-flex flex-column justify-content-center h-100" >
+                                <div class="d-flex align-items-center position-relative ps-45px xs-ps-0">
+                                    <div class="position-absolute left-0px top-0px h-100 w-110px d-none d-sm-block">
+                                        <div class="vertical-title-center align-items-center">
+                                            <div class="title fs-12 ls-4px text-uppercase text-white" data-anime='{ "el": "childs", "rotateX": [90, 0], "opacity": [0,1], "delay": 500, "staggervalue": 150, "easing": "easeOutQuad" }'>
+                                                <span class="d-inline-block">School Mgmt</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="position-absolute z-index-1 top-30px right-40px xs-top-15px xs-right-25px d-flex align-items-center text-white fs-13"><span class="w-25px h-1px bg-white me-10px"></span> 02</div>
+                                    <img src="https://via.placeholder.com/1050x645" class="border-radius-8px" alt="">
+                                    <div class="alt-font position-absolute right-minus-120px md-right-110px sm-right-auto fs-180 md-fs-140 xs-fs-80 text-white sm-w-90 xs-w-100 text-center">
+                                        <span class="text-shadow-large swiper-parallax-fancy-text" data-fancy-text='{ "opacity": [0, 1], "delay": 800, "speed": 50, "string": ["School Mgmt"], "easing": "easeOutQuad" }'></span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <!-- start marquees -->
+                        <div class="marquees-text slider-big-title alt-font ls-minus-10px text-olive-green text-nowrap position-absolute top-0px left-0px d-none d-md-block">School Mgmt</div> 
+                        <!-- end marquees -->
                     </div>
                 </div>
-
-                <!-- Swiper Slide 3 -->
+                <!-- end slider item -->
+                <!-- start slider item -->
                 <div class="swiper-slide">
                     <div class="container h-100">
                         <div class="row h-100 position-relative z-index-1">
-                            <div class="col-lg-10 col-md-11 d-flex flex-column justify-content-center h-100">
-                                <img src="images/project-3.png" class="border-radius-8px" alt="">
-                                <div class="alt-font position-absolute right-minus-120px text-white text-center">
-                                    <span class="text-shadow-large swiper-parallax-fancy-text">Future Project</span>
+                            <div class="col-lg-10 col-md-11 position-relative d-flex flex-column justify-content-center h-100">
+                                <div class="d-flex align-items-center position-relative ps-45px xs-ps-0">
+                                    <div class="position-absolute left-0px top-0px h-100 w-110px d-none d-sm-block">
+                                        <div class="vertical-title-center align-items-center">
+                                            <div class="title fs-12 ls-4px text-uppercase text-white" data-anime='{ "el": "childs", "rotateX": [90, 0], "opacity": [0,1], "delay": 500, "staggervalue": 150, "easing": "easeOutQuad" }'>
+                                                <span class="d-inline-block">Cleaning Mgmt</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="position-absolute z-index-1 top-30px right-40px xs-top-15px xs-right-25px d-flex align-items-center text-white fs-13"><span class="w-25px h-1px bg-white me-10px"></span> 03</div>
+                                    <img src="https://via.placeholder.com/1050x645" class="border-radius-8px" alt="">
+                                    <div class="alt-font position-absolute right-minus-120px md-right-110px sm-right-auto fs-180 md-fs-140 xs-fs-80 text-white sm-w-90 xs-w-100 text-center">
+                                        <span class="text-shadow-large swiper-parallax-fancy-text" data-fancy-text='{ "opacity": [0, 1], "delay": 800, "speed": 50, "string": ["Cleaning Mgmt"], "easing": "easeOutQuad" }'></span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <!-- start marquees -->
+                        <div class="marquees-text slider-big-title alt-font ls-minus-10px text-olive-green text-nowrap position-absolute top-0px left-0px d-none d-md-block">Cleaning Mgmt</div> 
+                        <!-- end marquees -->
                     </div>
                 </div>
+                <!-- end slider item -->
+                
             </div>
-            <!-- Swiper Pagination -->
-            <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets-right"></div>
-        </div>
+            <!-- start slider pagination -->
+            <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets-right"></div> 
+            <!-- end slider pagination -->  
+        </div> 
     </section>
-
-    <!-- JavaScript Files -->
-    <script src="js/jquery.js"></script>
-    <script src="js/vendors.min.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/theme-toggle.js"></script> <!-- Custom Theme Script -->
+    <!-- end section -->
+    <!-- javascript libraries -->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/vendors.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
