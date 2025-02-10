@@ -1,0 +1,10 @@
+# Ignore email engine folder
+mail-engine/
+
+# Ignore system files
+*.log
+*.env
+*.DS_Store
+*.vscode/
+node_modules/
+__pycache__/

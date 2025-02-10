@@ -23,36 +23,43 @@
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="css/responsive.css"/>
     <link rel="stylesheet" href="css/laughingloop.css"/> <!-- Custom Laughing Loop Styles -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
 </head>
 
 <body data-mobile-nav-style="classic">
 
     <!-- start header -->
     <header>
-        <!-- start navigation -->
         <nav class="navbar navbar-expand-lg header-transparent bg-transparent disable-fixed" data-header-hover="dark">
-            <div class="container-fluid">
-                <div class="col-auto col-lg-2 me-lg-0 me-auto d-none d-lg-flex">
-                    <div class="header-icon icon">
-                        <button id="theme-toggle" class="theme-toggle-btn">🌞 | 🌙</button> 
-                    </div>
-                </div>
+            <div class="container-fluid d-flex align-items-center justify-content-between">
+                <!-- Left Side: Theme Toggle -->
                 <div class="col-auto">
-                    <a class="navbar-brand" href="demo-vertical-portfolio.html">
-                        <img src="images/laughingloop-logo-white.png" data-at2x="images/laughingloop-logo-white@2x.png" alt="" class="default-logo">
-                        <img src="images/laughingloop-logo-white.png" data-at2x="images/laughingloop-logo-white@2x.png" alt="" class="alt-logo">
-                        <img src="images/laughingloop-logo-white.png" data-at2x="images/laughingloop-logo-white@2x.png" alt="" class="mobile-logo">
+                    <button id="theme-toggle" class="theme-toggle-btn"><i class="fa-solid fa-moon"></i></button>
+                </div>
+
+                <!-- Center: Logo -->
+                <div class="col-auto">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="images/laughingloop-logo.png" data-at2x="images/laughingloop-logo@2x.png" alt="" class="default-logo">
+                        <img src="images/laughingloop-logo.png" data-at2x="images/laughingloop-logo@2x.png" alt="" class="alt-logo">
+                        <img src="images/laughingloop-logo.png" data-at2x="images/laughingloop-logo@2x.png" alt="" class="mobile-logo">
                     </a>
                 </div>
-                <div class="col-auto col-lg-2 text-end">
-                    <div class="header-icon">
+
+                <!-- Right Side: Contact Icon -->
+                <div class="col-auto">
+                    <div class="header-icon contact-icon">
                         <a href="contact.html" class="contact-icon"><i class="fa-solid fa-envelope"></i></a>
                     </div>
                 </div>
             </div>
         </nav>
-        <!-- end navigation -->
     </header>
+    <!-- end header -->
+
+
     <!-- end header -->
     <!-- start section -->
     <section class="demo-vertical-portfolio magic-cursor drag-cursor p-0 cover-background position-relative" style="background-image:url('images/portfolio-bg-01.png');">
@@ -74,14 +81,14 @@
                                     <div class="position-absolute left-0px top-0px h-100 w-110px d-none d-sm-block">
                                         <div class="vertical-title-center align-items-center">
                                             <div class="title fs-12 ls-4px text-uppercase text-white" data-anime='{ "el": "childs", "rotateX": [90, 0], "opacity": [0,1], "delay": 500, "staggervalue": 150, "easing": "easeOutQuad" }'>
-                                                <span class="d-inline-block">Creer Ads</span>
+                                                <span class="d-inline-block">Creer Ads Website</span>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="position-absolute z-index-1 top-30px right-40px xs-top-15px xs-right-25px d-flex align-items-center text-white fs-13"><span class="w-25px h-1px bg-white me-10px"></span> 01</div>
-                                    <img src="https://via.placeholder.com/1050x645" class="border-radius-8px" alt="">
+                                    <img src="images/projects/creerads-01.png" class="border-radius-8px" alt="">
                                     <div class="alt-font position-absolute right-minus-120px md-right-110px sm-right-auto fs-180 md-fs-140 xs-fs-80 text-white sm-w-90 xs-w-100 text-center">
-                                        <span class="text-shadow-large swiper-parallax-fancy-text" data-fancy-text='{ "opacity": [0, 1], "delay": 800, "speed": 50, "string": ["Creerads Website"], "easing": "easeOutQuad" }'></span>
+                                        <span class="text-shadow-large swiper-parallax-fancy-text" data-fancy-text='{ "opacity": [0, 1], "delay": 800, "speed": 50, "string": ["Creer Ads"], "easing": "easeOutQuad" }'></span>
                                     </div>
                                 </div>
                             </div>
@@ -106,7 +113,7 @@
                                         </div>
                                     </div>
                                     <div class="position-absolute z-index-1 top-30px right-40px xs-top-15px xs-right-25px d-flex align-items-center text-white fs-13"><span class="w-25px h-1px bg-white me-10px"></span> 02</div>
-                                    <img src="https://via.placeholder.com/1050x645" class="border-radius-8px" alt="">
+                                    <img src="images/projects/sch-mgnt-01.png" class="border-radius-8px" alt="">
                                     <div class="alt-font position-absolute right-minus-120px md-right-110px sm-right-auto fs-180 md-fs-140 xs-fs-80 text-white sm-w-90 xs-w-100 text-center">
                                         <span class="text-shadow-large swiper-parallax-fancy-text" data-fancy-text='{ "opacity": [0, 1], "delay": 800, "speed": 50, "string": ["School Mgmt"], "easing": "easeOutQuad" }'></span>
                                     </div>
@@ -128,20 +135,20 @@
                                     <div class="position-absolute left-0px top-0px h-100 w-110px d-none d-sm-block">
                                         <div class="vertical-title-center align-items-center">
                                             <div class="title fs-12 ls-4px text-uppercase text-white" data-anime='{ "el": "childs", "rotateX": [90, 0], "opacity": [0,1], "delay": 500, "staggervalue": 150, "easing": "easeOutQuad" }'>
-                                                <span class="d-inline-block">Cleaning Mgmt</span>
+                                                <span class="d-inline-block">CLEANINGMGMT</span>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="position-absolute z-index-1 top-30px right-40px xs-top-15px xs-right-25px d-flex align-items-center text-white fs-13"><span class="w-25px h-1px bg-white me-10px"></span> 03</div>
-                                    <img src="https://via.placeholder.com/1050x645" class="border-radius-8px" alt="">
+                                    <img src="images/projects/clean-mgnt-01.png" class="border-radius-8px" alt="">
                                     <div class="alt-font position-absolute right-minus-120px md-right-110px sm-right-auto fs-180 md-fs-140 xs-fs-80 text-white sm-w-90 xs-w-100 text-center">
-                                        <span class="text-shadow-large swiper-parallax-fancy-text" data-fancy-text='{ "opacity": [0, 1], "delay": 800, "speed": 50, "string": ["Cleaning Mgmt"], "easing": "easeOutQuad" }'></span>
+                                        <span class="text-shadow-large swiper-parallax-fancy-text" data-fancy-text='{ "opacity": [0, 1], "delay": 800, "speed": 50, "string": ["Clean Mgmt."], "easing": "easeOutQuad" }'></span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <!-- start marquees -->
-                        <div class="marquees-text slider-big-title alt-font ls-minus-10px text-olive-green text-nowrap position-absolute top-0px left-0px d-none d-md-block">Cleaning Mgmt</div> 
+                        <div class="marquees-text slider-big-title alt-font ls-minus-10px text-olive-green text-nowrap position-absolute top-0px left-0px d-none d-md-block">Cleaning Mgmt.</div> 
                         <!-- end marquees -->
                     </div>
                 </div>
